@@ -1,0 +1,32 @@
+﻿<UserControl
+    x:Class="GreenHouseMonitoringClient.userControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GreenHouseMonitoringClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    Height="Auto"
+    Width="Auto">
+    <Grid>
+        <!--<Button Click="Button_Click">-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8F9;"/>
+        </Grid>
+        <StackPanel Grid.Column="1" Orientation="Vertical"  HorizontalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock x:Name="uid" Text="{x:Bind Uid}" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel  HorizontalAlignment="Center">
+                <TextBlock x:Name="usrname" Text="{x:Bind Username}"  HorizontalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+            </Grid>
+       <!--</Button> -->
+    </Grid>
+</UserControl>
